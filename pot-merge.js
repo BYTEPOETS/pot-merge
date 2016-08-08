@@ -172,8 +172,6 @@ SetOfBlocks.prototype.getDuplicate = function(hash) {
     }
 
     var writeFile = function(blocks, output){
-        console.log('');
-        console.log('writefile: '+blocks.toStr());
         var text = blocks.toStr();
         fs.writeFile(output, text);
     }
